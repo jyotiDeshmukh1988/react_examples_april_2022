@@ -1,4 +1,4 @@
-import Carousel from "./components/carousel/Carousel.js";
+// import Carousel from "./components/carousel/Carousel.js";
 import Footer from "./components/footer/Footer.js";
 import Header from "./components/header/Header.js";
 import Main from "./components/main/Main.js";
@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header />
       <NavBar></NavBar>
-      <Carousel></Carousel>
+      {/* <Carousel></Carousel> */}
       <Main></Main>
       <Footer />
     </div>
