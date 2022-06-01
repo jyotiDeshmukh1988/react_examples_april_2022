@@ -2,6 +2,12 @@ import React from "react";
 
 export default function ArrayDemo1() {
   const cars = ["tata", "honda", "maruti", "toyota", "hundai"];
+
+  const addNewCar = function () {
+    cars.push("BMW");
+    console.log(cars);
+  };
+  
   return (
     <>
       <div>ArrayDemo1</div>
@@ -12,6 +18,7 @@ export default function ArrayDemo1() {
           </li>
         ))}
       </ul>
+      <button onClick={addNewCar}>push a new car</button>
     </>
   );
 }

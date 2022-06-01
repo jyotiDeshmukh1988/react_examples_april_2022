@@ -1,5 +1,8 @@
 import React from "react";
-import ArrayDemo4 from "../ListItems/ArrayDemo4";
+import UserList from "../props/UserList";
+// import Greet from "../greet/Greet";
+// import ForceUpdateDemo1 from "../forceUpdate/ForceUpdateDemo1";
+// import ArrayDemo4 from "../ListItems/ArrayDemo4";
 // import ArrayDemo2 from "../ListItems/ArrayDemo2";
 // import ArrayDemo3 from "../ListItems/ArrayDemo3";
 // import ArrayDemo1 from "../ListItems/ArrayDemo1";
@@ -22,7 +25,12 @@ export default function Main() {
       {/* <ArrayDemo1></ArrayDemo1> */}
       {/* <ArrayDemo2></ArrayDemo2> */}
       {/* <ArrayDemo3></ArrayDemo3> */}
-      <ArrayDemo4></ArrayDemo4>
+      {/* <ArrayDemo4></ArrayDemo4> */}
+      {/* <ForceUpdateDemo1></ForceUpdateDemo1> */}
+      {/* <Greet name="sachin" msg="good evening"></Greet>
+      <Greet name="rahul" msg="good morning"></Greet>
+      <Greet name="ramesh" msg="good afternoon"></Greet> */}
+      <UserList></UserList>
     </div>
   );
 }
