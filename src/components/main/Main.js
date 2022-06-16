@@ -7,7 +7,22 @@ import EventDemo3 from "../events/EventDemo3";
 import EventDemo4 from "../events/EventDemo4";
 import EventDemo5 from "../events/EventDemo5";
 import EventDemo6 from "../events/EventDemo6";
+import FormDemo1 from "../form/FormDemo1";
+import FormDemo2 from "../form/FormDemo2";
+import FormDemo3 from "../form/FormDemo3";
+import RefDemo1 from "../form/RefDemo1";
+import RefDemo2 from "../form/RefDemo2";
+import RefDemo3 from "../form/RefDemo3";
+import FetchDemo1 from "../hooks/FetchDemo1";
+import FetchDemo2 from "../hooks/FetchDemo2";
+import Counter from "../hooks/getSnapShotBeforeUpdateDemo1";
+import MountingDemo1 from "../hooks/MountingDemo1";
+import UpdatingDemo1 from "../hooks/UpdatingDemo1";
+import UseEffectDemo1 from "../hooks/UseEffectDemo1";
 import MemoDemo1 from "../memo/MemoDemo1";
+import MyParent from "../memo/MyParent";
+import UseCallBackDemo from "../memo/UseCallBackDemo";
+import UseMemoDemo from "../memo/UseMemoDemo";
 import Calculator1 from "../state/Calculator1";
 import Calculator2 from "../state/Calculator2";
 // import UserList from "../props/UserList";
@@ -68,7 +83,22 @@ export default function Main() {
       {/* <EventDemo5></EventDemo5> */}
       {/* <EventDemo6></EventDemo6> */}
       {/* <Parent></Parent> */}
-      <MemoDemo1></MemoDemo1>
+      {/* <MemoDemo1></MemoDemo1> */}
+      {/* <UseMemoDemo></UseMemoDemo> */}
+      {/* <UseCallBackDemo></UseCallBackDemo> */}
+      {/* <MyParent></MyParent> */}
+      {/* <MountingDemo1 color='blue'></MountingDemo1> */}
+      {/* <FetchDemo1></FetchDemo1> */}
+      {/* <UpdatingDemo1></UpdatingDemo1> */}
+      {/* <UseEffectDemo1 a={11}></UseEffectDemo1> */}
+      {/* <Counter></Counter> */}
+      {/* <FetchDemo2></FetchDemo2> */}
+      {/* <RefDemo1></RefDemo1> */}
+      {/* <RefDemo2></RefDemo2> */}
+      {/* <RefDemo3></RefDemo3> */}
+      {/* <FormDemo1></FormDemo1> */}
+      {/* <FormDemo2></FormDemo2> */}
+      <FormDemo3></FormDemo3>
     </div>
   );
 }
