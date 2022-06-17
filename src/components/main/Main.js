@@ -1,4 +1,6 @@
 import React from "react";
+import AjaxDemo1 from "../ajax/AjaxDemo1";
+import AjaxDemo2 from "../ajax/AjaxDemo2";
 import Parent from "../communication/Parent";
 import Demo2 from "../demo/Demo2";
 import EventDemo1 from "../events/EventDemo1";
@@ -98,7 +100,9 @@ export default function Main() {
       {/* <RefDemo3></RefDemo3> */}
       {/* <FormDemo1></FormDemo1> */}
       {/* <FormDemo2></FormDemo2> */}
-      <FormDemo3></FormDemo3>
+      {/* <FormDemo3></FormDemo3> */}
+      {/* <AjaxDemo1></AjaxDemo1> */}
+      <AjaxDemo2></AjaxDemo2>
     </div>
   );
 }
