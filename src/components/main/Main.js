@@ -1,6 +1,13 @@
 import React from "react";
+import AjaxCRUD from "../ajax/AjaxCRUD";
 import AjaxDemo1 from "../ajax/AjaxDemo1";
 import AjaxDemo2 from "../ajax/AjaxDemo2";
+import AjaxDemo3 from "../ajax/AjaxDemo3";
+import AjaxDemo4 from "../ajax/AjaxDemo4";
+import AjaxDemo5 from "../ajax/AjaxDemo5";
+import AjaxDemo6 from "../ajax/AjaxDemo6";
+import AjaxDemo7 from "../ajax/AjaxDemo7";
+import AjaxDemo8 from "../ajax/AjaxDemo8";
 import Parent from "../communication/Parent";
 import Demo2 from "../demo/Demo2";
 import EventDemo1 from "../events/EventDemo1";
@@ -27,24 +34,31 @@ import UseCallBackDemo from "../memo/UseCallBackDemo";
 import UseMemoDemo from "../memo/UseMemoDemo";
 import Calculator1 from "../state/Calculator1";
 import Calculator2 from "../state/Calculator2";
-// import UserList from "../props/UserList";
-// import Greet from "../greet/Greet";
-// import StateDemo1 from "../state/StateDemo1";
-// import StateDemo2 from "../state/StateDemo2";
-// import StateDemo3 from "../state/StateDemo3";
-// import StateDemo4 from "../state/StateDemo4";
-// import ToggleDemo from "../state/ToggleDemo";
-// import ForceUpdateDemo1 from "../forceUpdate/ForceUpdateDemo1";
-// import ArrayDemo4 from "../ListItems/ArrayDemo4";
-// import ArrayDemo2 from "../ListItems/ArrayDemo2";
-// import ArrayDemo3 from "../ListItems/ArrayDemo3";
-// import ArrayDemo1 from "../ListItems/ArrayDemo1";
-// import Conditional3 from "../conditional/Conditional3";
-// import Conditional2 from "../conditional/Conditional2";
-// import Conditional1 from "../conditional/Conditional1";
-// import Addition1 from "../addition/Addition1";
-// import Demo1 from "../demo/Demo1";
+import UserList from "../props/UserList";
+import Greet from "../greet/Greet";
+import StateDemo1 from "../state/StateDemo1";
+import StateDemo2 from "../state/StateDemo2";
+import StateDemo3 from "../state/StateDemo3";
+import StateDemo4 from "../state/StateDemo4";
+import ToggleDemo from "../state/ToggleDemo";
+import ForceUpdateDemo1 from "../forceUpdate/ForceUpdateDemo1";
+import ArrayDemo4 from "../ListItems/ArrayDemo4";
+import ArrayDemo2 from "../ListItems/ArrayDemo2";
+import ArrayDemo3 from "../ListItems/ArrayDemo3";
+import ArrayDemo1 from "../ListItems/ArrayDemo1";
+import Conditional3 from "../conditional/Conditional3";
+import Conditional2 from "../conditional/Conditional2";
+import Conditional1 from "../conditional/Conditional1";
+import Addition1 from "../addition/Addition1";
+import Demo1 from "../demo/Demo1";
 import "./Main.css";
+import { Route, Routes } from "react-router-dom";
+import Home from "../home/Home";
+import AboutUs from "../aboutus/AboutUs";
+import ContactUs from "../contactus/ContactUs";
+import NotFound from "../notfound/NotFound";
+import ProductList from "../productlist/ProductList";
+import ProductDetails from "../productlist/ProductDetails";
 
 export default function Main() {
   return (
@@ -102,7 +116,23 @@ export default function Main() {
       {/* <FormDemo2></FormDemo2> */}
       {/* <FormDemo3></FormDemo3> */}
       {/* <AjaxDemo1></AjaxDemo1> */}
-      <AjaxDemo2></AjaxDemo2>
+      {/* <AjaxDemo2></AjaxDemo2> */}
+      {/* <AjaxDemo3></AjaxDemo3> */}
+      {/* <AjaxDemo4></AjaxDemo4> */}
+      {/* <AjaxDemo5></AjaxDemo5> */}
+      {/* <AjaxDemo6></AjaxDemo6> */}
+      {/* <AjaxDemo7></AjaxDemo7> */}
+      {/* <AjaxDemo8></AjaxDemo8> */}
+      {/* <AjaxCRUD></AjaxCRUD> */}
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/home" element={<Home />} />
+        <Route exact path="/aboutus" element={<AboutUs />} />
+        <Route exact path="/contactus" element={<ContactUs />} />
+        <Route exact path="/productlist" element={<ProductList />} />
+        <Route path="/productdetails/:id" element={<ProductDetails />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
   );
 }
